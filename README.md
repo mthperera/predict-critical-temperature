@@ -6,6 +6,12 @@ O dataset utilizado contém **80 propriedades físico-químicas** derivadas da c
 
 ---
 
+ 🧪 Teoria
+
+Para entender os conceitos físicos por trás do projeto, veja o arquivo 👉 [teoria_supercondutividade.md](teoria_supercondutividade.md)
+
+---
+
 ## 📊 Dataset
 
 Este projeto utiliza o [Superconductivity Data Set](https://archive.ics.uci.edu/dataset/464/superconductivty+data), disponibilizado pelo **UCI Machine Learning Repository**.
