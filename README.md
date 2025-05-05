@@ -1,29 +1,29 @@
 # 🔬 Superconductors Regression Project
 
-Este projeto tem como objetivo explorar técnicas de **regressão preditiva** aplicadas ao problema de previsão da **temperatura crítica (`critical_temp`)** de supercondutores, utilizando algoritmos de machine learning.
-
-O dataset utilizado contém **80 propriedades físico-químicas** derivadas da composição dos materiais supercondutores.
+Este projeto explora técnicas de **regressão preditiva** aplicadas à previsão da **temperatura crítica (`critical_temp`)** de supercondutores, utilizando algoritmos de aprendizado de máquina.
 
 ---
 
- 🧪 Teoria
+## 📂 Sobre o Projeto
 
-Para entender os conceitos físicos por trás do projeto, veja o arquivo 👉 [teoria_supercondutividade.md](teoria_supercondutividade.md)
+O objetivo principal é desenvolver modelos capazes de prever a temperatura crítica de materiais supercondutores com base em suas propriedades físico-químicas.  
+Para isso, são aplicados e comparados diversos algoritmos de regressão, avaliando seu desempenho por meio de métricas como RMSE e R².
 
 ---
 
 ## 📊 Dataset
 
-Este projeto utiliza o [Superconductivity Data Set](https://archive.ics.uci.edu/dataset/464/superconductivty+data), disponibilizado pelo **UCI Machine Learning Repository**.
+Utiliza-se o [Superconductivity Data Set](https://archive.ics.uci.edu/dataset/464/superconductivty+data), disponibilizado pelo **UCI Machine Learning Repository**.  
+O conjunto de dados contém informações sobre 21.263 supercondutores, com 81 características extraídas de suas fórmulas químicas e a temperatura crítica correspondente.
 
-⚠️ **Os dados não estão incluídos neste repositório.**  
+**⚠️ Importante:** Os dados não estão incluídos neste repositório.  
 Para utilizá-los, baixe diretamente do repositório oficial:
 
-🔗 **Download direto**: https://archive.ics.uci.edu/ml/machine-learning-databases/00464/
+🔗 [Download direto](https://archive.ics.uci.edu/ml/machine-learning-databases/00464/)
 
-📄 **Uso permitido somente para fins educacionais e de pesquisa.**
+**📄 Uso permitido somente para fins educacionais e de pesquisa.**
 
-Por favor, **cite o artigo original** ao utilizar este dataset:
+**Por favor, cite o artigo original ao utilizar este dataset:**
 
 > Hamidieh, Kam (2018).  
 > *A data-driven statistical model for predicting the critical temperature of a superconductor*.  
@@ -32,21 +32,52 @@ Por favor, **cite o artigo original** ao utilizar este dataset:
 
 ---
 
-## 🎯 Objetivo
+## 🧪 Teoria
 
-O objetivo principal é:
-- Aplicar e comparar algoritmos de regressão
-- Avaliar desempenho com métricas como RMSE e R²
-- Identificar as features mais relevantes para a previsão de `critical_temp`
+Para compreender os conceitos físicos por trás do projeto, consulte o arquivo [teoria_supercondutividade.md](teoria_supercondutividade.md), que aborda os fundamentos da supercondutividade e sua relação com as propriedades dos materiais.
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
 - Python 3.12+
-- pandas, numpy, seaborn, matplotlib
-- scikit-learn
-- joblib
+- Bibliotecas de análise de dados: pandas, numpy
+- Visualização de dados: matplotlib, seaborn
+- Modelagem e aprendizado de máquina:
+   * scikit-learn (regressão, métricas, seleção de features)
+   * PyTorch (implementação de redes neurais personalizadas)
+- Persistência de dados intermediários: pickle
+
+---
+
+## 🚀 Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/mthperera/predict-critical-temperature.git
+   cd predict-critical-temperature
+   ```
+
+2. Crie e ative um ambiente virtual (opcional, mas recomendado):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows: venv\Scripts\activate
+   ```
+
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Baixe o dataset conforme instruções acima e coloque os arquivos `train.csv` e `unique_m.csv` na pasta `data/`.
+
+5. Execute os notebooks ou scripts conforme necessário para treinar e avaliar os modelos.
+
+---
+
+## 📈 Resultados Esperados
+
+Espera-se, idealmente, que os modelos desenvolvidos sejam capazes de prever com boa acurácia a temperatura crítica de novos materiais, contribuindo com insights para a descoberta de novos supercondutores.
 
 ---
 
